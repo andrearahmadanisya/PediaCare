@@ -1,12 +1,6 @@
 <body>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container text-center">
-            <h2 class="display-4">Anda Ingin Konsultasi Seputar Anak ?</h2>
-            <p class="lead">Tanyakan kepada kami secara mudah dan cepat</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">klik disini</a>
-        </div>
-    </div>
-
+    <img class="card-img" src="<?php echo base_url(); ?>assets/images/konsul/bg.png">
+    
     <div class="container">
         <?php foreach ($rumahsakit as $rs) { ?>
             <div class="row">
