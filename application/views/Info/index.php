@@ -30,7 +30,7 @@
                 <div class="media-body">
                     <h5 class="mt-0"><?= $i['judul'] ?></h5>
                     <p><?php echo substr($i['isi'], 0, 100)  ?>...</p>
-                    <a href="<?= base_url('InfoController/view/') . $i['id_info'] ?>" class="stretched-link">klik disini</a>
+                    <a type="button" class="btn btn-sm" href="<?= base_url('InfoController/view/') . $i['id_info'] ?>" class="stretched-link">klik disini</a>
                     <a type="button" class="btn btn-danger btn-sm" href="<?php echo base_url() . 'InfoController/DeleteInfo/' . $i['id_info'] ?>" onClick="return confirm('Apakah Anda Yakin?')">Delete</a></td>
                     <a type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#UpdateInfo<?=$i['id_info']?>"> Update</a>
                 </div>
@@ -38,7 +38,7 @@
             <br>
         <?php } ?>
 
-        <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#AddInfo"> Create</a>
+        <a type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#AddInfo"> Create</a>
     </div>
 </body>
 
