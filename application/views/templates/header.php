@@ -31,7 +31,7 @@
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="<?= base_url('HomeController'); ?>">Home</a>
                     <a class="nav-item nav-link" href="<?= base_url('RumahSakitController'); ?>">Rumah Sakit</a>
-                    <a class="nav-item nav-link" href="<?= base_url('KonsultasiController'); ?>">konsultasi</a>
+                    <a class="nav-item nav-link" href="<?= base_url('KonsultasiController'); ?>">Konsultasi</a>
                     <a class="nav-item nav-link" href="<?= base_url('InfoController'); ?>">Info/Berita</a>
                     <a class="nav-item nav-link" href="<?= base_url('HomeController/AboutUs'); ?>">About Us</a>
                 </div>
