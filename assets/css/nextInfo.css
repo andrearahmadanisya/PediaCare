@@ -1,0 +1,28 @@
+body{
+    background: #007b9b;
+}
+
+.img-title{
+    margin-top: 30px;
+}
+
+.col img{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.col p{
+    text-align: justify;
+}
+
+.kembali{
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.card{
+    margin-top: 30px;
+    background: white;
+}
+
