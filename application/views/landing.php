@@ -59,7 +59,7 @@
   </div>
   <br><br>
 
-  <div class="container-fluid">
+  <div class="container-fluid" style="background: #C4C4C4;">
     <div class="row">
       <div class="col text-left">
         <h1>Jelajahi Pediatricare</h1>
