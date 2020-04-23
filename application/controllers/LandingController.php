@@ -5,7 +5,7 @@ class LandingController extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('LandingModel');
+//         $this->load->model('LandingModel');
         $this->load->library('form_validation');
     }
 
