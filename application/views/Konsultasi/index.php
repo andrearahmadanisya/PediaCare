@@ -15,12 +15,13 @@
             </div>
             <div class="card-footer">
                 <a type="button" href="<?= base_url('lihat_konsultasi_controller'); ?>" class="btn"> lihat</a>
+                <a type="button" href="<?= base_url('JawabKonsultasiController'); ?>" class="btn">Jawab</a>
             </div>
         </div>
     <?php } ?>
     <br>
-    <div class="card text-left">
-        <a type="button" href="<?= base_url('InputKonsultasiController'); ?>">Tanya!</a>
+    <div class="card-footer">
+        <a type="button" href="<?= base_url('InputKonsultasiController'); ?>" class="btn">Tanya!</a>
     </div>
 
     </table>
