@@ -1,3 +1,6 @@
+<head>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url() . "assets/css/rs.css"; ?>" />
+</head>
 <body class="rumahsakit">
     <div class="jumbotron jumbotron-fluid">
         <div class="container text-center">
