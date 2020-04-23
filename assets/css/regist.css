@@ -1,32 +1,16 @@
-.register-block {
-    /* background: url(<?php echo base_url(); ?>assets/images/register/background.jpg) auto; */
-    background-color: #007B9B;
-    padding: 50px 0;
+.register-block{
+    background-color : #007B9B;
+    padding : 50px 0;
 }
-
-.banner-sec {
-    background: url('<?php echo base_url(); ?>assets/images/register/foto.jpg') no-repeat bottom;
-    background-size: cover;
-    min-height: 500px;
-    border-radius: 0 10px 10px 0;
-    padding: 0;
+.container{
+    background:#fff; border-radius: 10px;
 }
-
-.container {
-    background: #fff;
-    border-radius: 10px;
+.carousel-inner{
+    border-radius:0 10px 10px 0;
 }
-
-.carousel-inner {
-    border-radius: 0 10px 10px 0;
+.carousel-caption{
+    text-align:left; left:5%;
 }
-
-.carousel-caption {
-    text-align: left;
-    left: 5%;
-}
-
-.register-sec {
-    padding: 50px 30px;
-    position: relative;
+.register-sec{
+    padding: 50px 30px; position:relative;
 }
