@@ -1,6 +1,6 @@
-<body>
+<body class="landing">
   <div class="card text-black" padding-left="0">
-    <img class="card-img" width="1200" height="400" src="<?php echo base_url(); ?>assets/images/home/landing_bg.jpg">
+    <img class="card-img" width="1200" height="400" src="<?php echo base_url(); ?>assets/images/landing/landing_bg.jpg">
     <div class="card-img-overlay text-center">
       <div class="container">
         <div class="row">
