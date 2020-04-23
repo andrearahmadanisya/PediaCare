@@ -1,3 +1,7 @@
+<head>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url() . "assets/css/konsultasi.css"; ?>" />
+
+</head>
 <body class="konsultasi">
     <img class="card-img" src="<?php echo base_url(); ?>assets/images/konsul/bg.png">
 
@@ -14,16 +18,16 @@
                 <p class="card-text"><?= $k['question'] ?></p>
             </div>
             <div class="card-footer">
-                <a type="button" href="<?= base_url('lihat_konsultasi_controller'); ?>" class="btn"> lihat</a>
-                <a type="button" href="<?= base_url('JawabKonsultasiController'); ?>" class="btn">Jawab</a>
+                <a type="button" href="<?= base_url('lihat_konsultasi_controller'); ?>" class="btn btn-body"> lihat</a>
+                <a type="button" href="<?= base_url('JawabKonsultasiController'); ?>" class="btn btn-body">Jawab</a>
             </div>
         </div>
     <?php } ?>
-    <br>
-    <div class="card-footer">
-        <a type="button" href="<?= base_url('InputKonsultasiController'); ?>" class="btn">Tanya!</a>
-    </div>
 
+    <br>
+    <div class="card-footer card-footer-tanya">
+        <a type="button" href="<?= base_url('InputKonsultasiController'); ?>" class="btn btn-tanya">Tanya!</a>
+    </div>
     </table>
     <br></bbr>
 </body>
