@@ -8,14 +8,14 @@
     <!------ Include the above in your HEAD tag ---------->
 </head>
 
-<body>
+<body class="login">
     <div class="container">
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <div class="row" style="margin-top:70px">
                     <div class="col-md-6">
-                        <img src="assets/images/login/foto_login.png" width="500px">
+                        <img src="assets/images/login/foto_login.png" width="450px">
                     </div>
                     <div class="col-md-6">
                         <ul class="text-center"><a>Member Login</a></ul>
