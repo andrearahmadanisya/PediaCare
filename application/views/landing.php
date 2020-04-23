@@ -70,6 +70,7 @@
     <div class="row" style="background-color: #007B9B;">
       <div class="col">
         <div class="card">
+          <img height="100px" aaclass="mr-3" src="assets/images/landing/dr.png" alt="Generic placeholder image">
           <div class="card-body text-center">
             <h5 class="card-title">Konsultasi</h5>
             <a href="#" class="card-link">Card link</a>
@@ -79,6 +80,7 @@
 
       <div class="col" style="background-color: #007B9B;">
         <div class="card">
+          <img height="100px" aaclass="mr-3" src="assets/images/landing/rs.jpg" alt="Generic placeholder image">
           <div class="card-body text-center">
             <h5 class="card-title">Rumah Sakit</h5>
             <a href="#" class="card-link">Card link</a>
@@ -88,6 +90,7 @@
 
       <div class="col" style="background-color: #007B9B;">
         <div class="card">
+          <img height="100px" aaclass="mr-3" src="assets/images/landing/info.jpg" alt="Generic placeholder image">
           <div class="card-body text-center">
             <h5 class="card-title">Info Kesehatan</h5>
             <a href="#" class="card-link">Card link</a>
