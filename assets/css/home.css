@@ -3,50 +3,50 @@
     
 }
 
-.thumbnail {
+.home .thumbnail {
     margin-top: 30px;
 }
 
-.about {
+.home .about {
     margin-top: 35px;
     text-align: justify;
 }
 
-#carouselExampleIndicators{
+.home  #carouselExampleIndicators{
     margin-top: 50px;
 }
 
-.tips h2{
+.home .tips h2{
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.card{
+.home .card{
 
     padding:0px;
 } 
 
-.kiri{
+.home .kiri{
     margin-left: 80px;
     width: 30rem;
     height: 15rem;
     background: #8B008B;
 }
 
-.kanan{
+.home .kanan{
     margin-left: 50x;
     width: 30rem;
     height: 15rem;
     background: #DAA520;
 }
 
-.card-body{
+.home .card-body{
     margin-top: 20px;
     text-align: justify;
     color: white;
 }
 
-.link-h{
+.home .link-h{
     color: white;
 }
 
