@@ -73,7 +73,7 @@
           <img height="100px" aaclass="mr-3" src="assets/images/landing/dr.png" alt="Generic placeholder image">
           <div class="card-body text-center">
             <h5 class="card-title">Konsultasi</h5>
-            <a href="#" class="card-link">Card link</a>
+<!--             <a href="#" class="card-link">Card link</a> -->
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@
           <img height="100px" aaclass="mr-3" src="assets/images/landing/rs.jpg" alt="Generic placeholder image">
           <div class="card-body text-center">
             <h5 class="card-title">Rumah Sakit</h5>
-            <a href="#" class="card-link">Card link</a>
+<!--             <a href="#" class="card-link">Card link</a> -->
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@
           <img height="100px" aaclass="mr-3" src="assets/images/landing/info.jpg" alt="Generic placeholder image">
           <div class="card-body text-center">
             <h5 class="card-title">Info Kesehatan</h5>
-            <a href="#" class="card-link">Card link</a>
+<!--             <a href="#" class="card-link">Card link</a> -->
           </div>
         </div>
       </div>
