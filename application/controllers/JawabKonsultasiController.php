@@ -7,6 +7,7 @@ class JawabKonsultasiController extends CI_Controller
         parent::__construct();
         $this->load->model('KonsultasiModel');
         $this->load->library('form_validation');
+        $this->load->model('KonsultasiModel');
     }
 
     public function index($id)
@@ -15,14 +16,9 @@ class JawabKonsultasiController extends CI_Controller
         $data['user'] = $this->session->userdata('user');
         $data['konsultasi'] = $this->KonsultasiModel->getById($id);
 
-        $this->form_validation->set_rules('judul', 'judul', 'required');
-        $this->form_validation->set_rules('username', 'username', 'required');
-        // $this->form_validation->set_rules('question', 'question', 'required');
-        // $this->form_validation->set_rules('dokter', 'dokter', 'required');
-        // $this->form_validation->set_rules('answer', 'answer', 'required');
+        $this->form_validation->set_rules('jawaban', 'jawaban', 'required');
 
         if ($this->form_validation->run() == false) {
-            $this->load->model('KonsultasiModel');
             $this->load->view('templates/header', $data);
             $this->load->view('Konsultasi/JawabKonsultasi', $data);
             $this->load->view('templates/footer');
@@ -32,13 +28,11 @@ class JawabKonsultasiController extends CI_Controller
                 "judul" => $data['konsultasi']['judul'],
                 "username" => $data['konsultasi']['username'],
                 "question" => $data['konsultasi']['question'],
-                "dokter" => $this->session->userdata('user'),
-                "answer" => $this->input->post('answer', true),
+                "dokter" => $data['user']['username'],
+                "answer" => $this->input->post('jawaban'),
             ];
             $this->KonsultasiModel->UpdateKonsultasi($jawab, $id);
-            // $id = $this->input->post('id_konsultasi', true);
-            $data = $this->konsultasiModel->getById($id);
-            redirect('lihat_konsultasi_controller');
+            redirect('KonsultasiController');
         }
     }
 }
