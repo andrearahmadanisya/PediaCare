@@ -17,19 +17,19 @@
             <br>
             <div class="form-group">
               <label for="exampleInputName1" class="text-uppercase">fullname</label>
-              <input type="fullname" name="fullname" value="<?= set_value('fullname') ?>" style="padding: 5px; padding-right: 225px;">
+              <input type="fullname" name="fullname" value="<?= set_value('fullname') ?>" style="padding: 5px; padding-right: 150px;border-radius: 5px 5px">
             </div>
             <div class="form-group">
               <label for="exampleInputAddress2" class="text-uppercase">username</label>
-              <input type="username" name="username" value="<?= set_value('username') ?>" style="padding: 5px; padding-right: 225px;">
+              <input type="username" name="username" value="<?= set_value('username') ?>" style="padding: 5px; padding-right: 150px;border-radius: 5px 5px">
             </div>
             <div class="form-group">
               <label for="exampleInputEmail" class="text-uppercase">Email</label>
-              <input type="email" name="email" value="<?= set_value('email') ?>" style="padding: 5px; padding-right: 225px;">
+              <input type="email" name="email" value="<?= set_value('email') ?>" style="padding: 5px; padding-right: 150px;border-radius: 5px 5px">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1" class="text-uppercase">Password</label>
-              <input type="password" name="password" value="<?= set_value('password') ?>" style="padding: 5px; padding-right: 225px;">
+              <input type="password" name="password" value="<?= set_value('password') ?>" style="padding: 5px; padding-right: 150px;border-radius: 5px 5px">
             </div>
             <button type="submit" class="btn btn-primary float-right">Submit</button>
             <!-- <div class="text-right" auto>
