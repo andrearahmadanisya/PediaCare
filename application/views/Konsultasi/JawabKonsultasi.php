@@ -9,11 +9,10 @@
                 <h4><b><?= $konsul['judul'] ?></b></h4>
                 <p>Penanya :<?= $konsul['username'] ?></p>
                 <p class="card-text">Pertanyaan : <?= $konsul['question'] ?></p>
-                <p class="card-text">Dokter : <?= $konsul['dokter'] ?></p>
             </div>
             <div class="form-group">
                 <label for="formGroupExampleInput2">Jawaban: <?= $konsul['answer'] ?></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="jawaban" rows="8"></textarea>
             </div>
             <div class="modal-footer">
                 <input type="submit" class="btn btn-primary" name="submit" value="Simpan">
