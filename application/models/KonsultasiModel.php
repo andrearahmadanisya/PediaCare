@@ -9,6 +9,12 @@ class KonsultasiModel extends CI_Model
         return $query->result_array();
     }
 
+    public function getById($id)
+    {
+        $query = $this->db->query("SELECT * FROM konsultasi WHERE id_konsultasi = '" . $id . "'");
+        return $query->row_array();
+    }
+
     public function AddKonsultasi($data)
     {
         // $data = [
@@ -30,5 +36,9 @@ class KonsultasiModel extends CI_Model
     public function DeleteKonsultasi($id_konsultasi)
     {
         return $this->db->delete('konsultasi', ['id_konsultasi' => $id_konsultasi]);
+    }
+
+    public function jawab($id, $jawab)
+    {
     }
 }
