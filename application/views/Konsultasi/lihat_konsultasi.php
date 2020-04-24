@@ -10,9 +10,9 @@
     </div>
     <div class="card-footer">
       <p>Dijawab oleh : <?= $konsul['dokter'] ?></p>
-      <p class="card-jawab"><?= $konsul['answer'] ?></p>
+      <p class="card-jawab">Jawab : <?= $konsul['answer'] ?></p>
     </div>
-    <a type="button" href="<?= base_url('JawabKonsultasiController/index/') . $konsul['id_konsultasi'] ?>" class="btn">Jawab</a>
+<!--     <a type="button" href="<?= base_url('JawabKonsultasiController/index/') . $konsul['id_konsultasi'] ?>" class="btn">Jawab</a> -->
     <br>
     <left><a type="button" class="btn" href="<?= base_url('KonsultasiController'); ?>">back</a></left>
   </div>
