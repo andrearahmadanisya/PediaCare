@@ -1,27 +1,26 @@
 <body class="jawabkonsultasi">
     <img class="card-img" src="<?php echo base_url(); ?>assets/images/konsul/bg.png">
     <br><br><br>
-
+    <?php $konsul = $konsultasi ?>
     <div class="card">
-        <form>
-            <h4><b>Form Jawab</b></h4><br>
+        <form action="<?= base_url('JawabKonsultasiController/index/') . $konsul['id_konsultasi'] ?>" method="POST">
+            <h4><b>Form Jawab</b></h4>
             <div class="form-group">
-                <h4><b>Saya pernah duduk bersebelahan dengan ODP covid19, apakah saya harus isolasi diri?</b></h4>
-                <p>penanya : SAEPUDIN</p>
-                <p class="card-text">sabtu siang kemarinsaya sempat bincang-bincang dengan teman-teman sekantor di ruangan tamu,
-                    apa yang harus saya lakukan untuk upaya penanggulangan covid dengan kondisi resiko yang saya alami ini dok? untuk informasi tambahan,
-                    teman saya itu tidak ada gejala apapun, batuk pilek atau sakit tenggorokan, kami juga tidak berjabat tangan hanya berbincang seperti biasa,
-                    jarak duduk kami pun sekitar 60 meter.terimakasih dok atas perhatiannya...wassalamualaikum wr wb.</p>
+                <h4><b><?= $konsul['judul'] ?></b></h4>
+                <p>Penanya :<?= $konsul['username'] ?></p>
+                <p class="card-text">Pertanyaan : <?= $konsul['question'] ?></p>
+                <p class="card-text">Dokter : <?= $konsul['dokter'] ?></p>
             </div>
             <div class="form-group">
-                <label for="formGroupExampleInput2">Jawaban:</label>
+                <label for="formGroupExampleInput2">Jawaban: <?= $konsul['answer'] ?></label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
             </div>
-            <right><button type="submit" class="btn btn-primary">Submit</button></right>
+            <div class="modal-footer">
+                <input type="submit" class="btn btn-primary" name="submit" value="Simpan">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+            </div>
         </form>
     </div>
-
-
     <br>
     <br>
     <br>
