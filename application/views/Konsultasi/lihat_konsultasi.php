@@ -8,11 +8,15 @@
     <div class="card-body">
       <p class="card-text"><?= $konsul['question'] ?></p>
     </div>
+    <?php if($konsul['dokter'] and $konsul['answer']) { ?>
     <div class="card-footer">
       <p>Dijawab oleh : <?= $konsul['dokter'] ?></p>
       <p class="card-jawab">Jawab : <?= $konsul['answer'] ?></p>
     </div>
-<!--     <a type="button" href="<?= base_url('JawabKonsultasiController/index/') . $konsul['id_konsultasi'] ?>" class="btn">Jawab</a> -->
+    <?php } ?>
+    <?php if($user['role']==1) { ?>
+    <a type="button" href="<?= base_url('JawabKonsultasiController/index/') . $konsul['id_konsultasi'] ?>" class="btn">Jawab</a> 
+    <?php } ?>
     <br>
     <left><a type="button" class="btn" href="<?= base_url('KonsultasiController'); ?>">back</a></left>
   </div>
