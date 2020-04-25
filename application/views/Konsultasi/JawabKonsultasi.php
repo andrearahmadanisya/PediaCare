@@ -16,7 +16,7 @@
             </div>
             <div class="modal-footer">
                 <input type="submit" class="btn btn-primary" name="submit" value="Simpan">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                <a class="btn btn-secondary" href="<?= base_url('KonsultasiController'); ?>">Batal</a>
             </div>
         </form>
     </div>
