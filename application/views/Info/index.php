@@ -7,7 +7,7 @@
             <div class="container text-center">
                 <h2 class="display-4">Anda Ingin Konsultasi Seputar Anak ?</h2>
                 <p class="lead">Tanyakan kepada kami secara mudah dan cepat</p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">klik disini</a>
+                <a class="btn btn-primary btn-lg" href="<?=base_url('KonsultasiController')?>" role="button">klik disini</a>
             </div>
         </div>
         <br><br>
@@ -31,15 +31,18 @@
                     <div class="media-body">
                         <h5 class="mt-0"><?= $i['judul'] ?></h5>
                         <p><?php echo substr($i['isi'], 0, 100)  ?>...</p>
-                        <a type="button" class="btn btn-sm" href="<?= base_url('InfoController/view/') . $i['id_info'] ?>" class="stretched-link">klik disini</a>
+                        <a type="button" class="btn btn-sm" href="<?= base_url('InfoController/view/') . $i['id_info'] ?>" class="stretched-link"><b>Lanjutkan membaca</b></a>
+                        <?php if($user['role']==1) { ?>
                         <a type="button" class="btn btn-danger btn-sm" href="<?php echo base_url() . 'InfoController/DeleteInfo/' . $i['id_info'] ?>" onClick="return confirm('Apakah Anda Yakin?')">Delete</a></td>
                         <a type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#UpdateInfo<?= $i['id_info'] ?>"> Update</a>
+                        <?php }?>
                     </div>
                 </div>
                 <br>
             <?php } ?>
-
+            <?php if($user['role']==1) { ?>
             <a type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#AddInfo"> Create</a>
+            <?php }?>
         </div>
     </body>
 
