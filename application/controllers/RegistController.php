@@ -13,6 +13,7 @@ class RegistController extends CI_Controller
     public function index()
     {
         $data['judul'] = 'Create Account';
+        $data['user'] = $this->session->userdata('user');
         $this->load->view('templates/header', $data);
         $this->load->view('Regist');
         $this->load->view('templates/footer');
@@ -35,15 +36,10 @@ class RegistController extends CI_Controller
         } else // else berhasil panggil fungsi addAkun di AccountModel
         {
             $this->AccountModel->addAccount();
-            // $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
-            // Congratulation your account has been created! Please Login.</div>');
-            //redirect('registcontroller');
 
             // panggil fungsi getUserByUsername dan simpan di variabel
             $this->load->library('session');
             $this->session->set_flashdata('user', $this->AccountModel->getAccountByUsername($this->input->post('username', true)));
-            //$data['user'] = $this->AccountModel->getUserByUsername($this->input->post('username', true));
-            //print_r($data['user']);
             // load home
             redirect('LoginController');
         }
