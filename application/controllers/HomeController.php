@@ -13,7 +13,7 @@ class HomeController extends CI_Controller
     public function index()
     {
         $data['judul'] = 'Home';
-        $data['user'] = $this->session->flashdata('user');
+        $data['user'] = $this->session->userdata('user');
 
         $this->load->view('templates/header', $data);
         $this->load->view('Home', $data);
@@ -35,13 +35,11 @@ class HomeController extends CI_Controller
         $this->load->view('Login');
         $this->load->view('templates/footer');
     }
-    
-    public function AboutUs()
+
+    public function logout()
     {
-        $data['judul'] = 'About us';
-        $this->load->view('templates/header', $data);
-        $this->load->view('AboutUs');
-        $this->load->view('templates/footer');
+        $this->session->sess_destroy();
+        redirect('HomeController');
     }
 }
 
