@@ -23,6 +23,7 @@
                 <a type="button" href="<?= base_url('lihat_konsultasi_controller/index/') . $k['id_konsultasi'] ?>" class="btn"> lihat</a>
                 <?php if($user['role']==1){ ?>
                 <a type="button" href="<?= base_url('JawabKonsultasiController/index/') . $k['id_konsultasi'] ?>" class="btn">Jawab</a>
+                <a type="button" href="<?= base_url('KonsultasiController/DeleteKonsultasi/') . $k['id_konsultasi'] ?>" class="btn" onClick="return confirm('Apakah Anda Yakin?')">Delete</a>
                 <?php } ?>
             </div>
         </div>
