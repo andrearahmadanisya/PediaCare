@@ -13,7 +13,7 @@ class KonsultasiController extends CI_Controller
     public function index()
     {
         $data['judul'] = 'Konsultasi';
-        // $data['user'] = $this->session->userdata('user');
+        $data['user'] = $this->session->userdata('user');
 
         $data['konsultasi'] = $this->KonsultasiModel->getAllKonsultasi();
         $this->load->view('templates/header', $data);
