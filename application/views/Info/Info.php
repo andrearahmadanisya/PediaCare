@@ -9,7 +9,7 @@
     
 
 </head>
-<body>
+<body class="ninfo">
 <?php $data = $info_detail;  ?>
     <div class="card">
         <div class="row">
