@@ -27,7 +27,7 @@
 
             <?php foreach ($info as $i) { ?>
                 <div class="media position-relative">
-                    <img src="<?= base_url() ?>assets/images/info/<?= $i['photo'] ?>" class="mr-3" alt="..." style="width:30%;">
+                    <img src="<?= base_url() ?>assets/images/info/<?= $i['photo'] ?>" class="mr-3" alt="..." style="width:270px;">
                     <div class="media-body">
                         <h5 class="mt-0"><?= $i['judul'] ?></h5>
                         <p><?php echo substr($i['isi'], 0, 100)  ?>...</p>
