@@ -15,15 +15,12 @@ class LoginController extends CI_Controller
     public function index()
     {
         $data['judul'] = 'Login';
-        // session_start();
-
         $this->form_validation->set_rules('username', 'username', 'required');
         $this->form_validation->set_rules('password', 'password', 'required');
 
         // username = guest kalo gak login
-        $guest =  array('username' => 'guest' );
+        $guest =  array('username' => 'guest', 'role' => -1 );
         $this->session->set_userdata('user',$guest);
-        
 
         if ($this->form_validation->run() == false) {
             $this->load->view('templates/header', $data);
@@ -31,16 +28,11 @@ class LoginController extends CI_Controller
             $this->load->view('templates/footer');
         } else {
             $uname = $this->input->post('username', true);
-            $data = $this->AccountModel->getAccountByUsername($uname);
-            if ($data) {
+            $user = $this->AccountModel->getAccountByUsername($uname);
+            if ($user) {
                 $pass = $this->input->post('password');
-                if ($data['password'] == $pass) {
-                    $sess_data = array(
-                        'username' => $data['username'],
-                        'fullname' => $data['fullname'],
-                        'email' => $data['email']
-                    );
-                    $this->session->set_userdata('user', $sess_data);
+                if ($user['password'] == $pass) {
+                    $this->session->set_userdata('user', $user);
                     redirect('HomeController');
                 } else {
                     redirect('LoginController'); //pass salah
