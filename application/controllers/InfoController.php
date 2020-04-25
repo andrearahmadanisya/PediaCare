@@ -15,6 +15,7 @@ class InfoController extends CI_Controller
     {
         $data['judul'] = 'Info';
         $data['info'] = $this->InfoModel->getAllInfo();
+        $data['user'] = $this->session->userdata('user');
         $this->load->view('templates/header', $data);
         $this->load->view('Info/index', $data);
         $this->load->view('templates/footer');
