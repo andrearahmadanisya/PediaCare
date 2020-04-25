@@ -1,25 +1,14 @@
-<html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="<?php base_url(); ?>assets/css/home.css">
-
-
-</head>
 
 <body class="home">
 
   <div class="card text-black" padding-left="0">
-    <img class="card-img" src="assets/images/home/bg_home2.png" alt="Card image" width="1200" height="300">
+    <img class="card-img" src="<?php base_url()?>assets/images/home/bg_home2.png" alt="Card image" width="1200" height="300">
     <div class="card-img-overlay text-center">
       <br><br><br>
       <h1 class="card-title">COVID-19 (NOVEL CORONAVIRUS)</h1>
       <p class="card-text">Mari kita cegah si kecil agar terhindar dari penyakit covid-19</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Read more</a>
+      <a class="btn btn-primary btn-lg" href="https://www.covid19.go.id/" role="button">Read more</a>
     </div>
   </div>
 
@@ -28,7 +17,7 @@
     <div class="row ">
       <div class="col">
         <div class="thumbnail">
-          <img src="assets/images/logo/1.png" width="400" height="300" class="img-responsive">
+          <img src="<?php base_url()?>assets/images/logo/1.png" width="400" height="300" class="img-responsive">
         </div>
       </div>
       <div class="col about">
@@ -47,13 +36,13 @@
     </ul>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="assets/images/home/slider_1.jpeg" class="d-block w-100" alt="..." width="500" height="300">
+        <img src="<?php base_url()?>assets/images/home/slider_1.jpeg" class="d-block w-100" alt="..." width="500" height="300">
       </div>
       <div class="carousel-item">
-        <img src="assets/images/home/slider_1.jpeg" class="d-block w-100" alt="..." width="500" height="300">
+        <img src="<?php base_url()?>assets/images/home/slider_1.jpeg" class="d-block w-100" alt="..." width="500" height="300">
       </div>
       <div class="carousel-item">
-        <img src="assets/images/home/slider_1.jpeg" class="d-block w-100" alt="..." width="500" height="300">
+        <img src="<?php base_url()?>assets/images/home/slider_1.jpeg" class="d-block w-100" alt="..." width="500" height="300">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
