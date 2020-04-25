@@ -3,7 +3,7 @@
   padding: 0px;
 }
 
-.login body{
+body{
   background: #007b9b;
   background-size: cover;
   background-attachment: fixed;
@@ -17,17 +17,19 @@
 .login ul a{
   font-size: 29px;
   color: black;
+  margin-top: 20px;
 }
 
-.login .label{
+.label{
   font-size: 20px;
   color: black;
   font-weight: normal;
 }
 
 .login .form-control{
-  border-radius: 1px;
-  border: 1px;
+  border-radius: 0px;
+  border: 0px;
+  border-bottom: 2px solid cadetblue ;
   margin-bottom: 20px;
   font-size: 16px;
   color: black;
@@ -52,7 +54,6 @@
 .login .signup{
   font-size: 16px;
   margin-top: -20px;
-  
 }
 
 .login .back{
