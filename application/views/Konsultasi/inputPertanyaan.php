@@ -25,6 +25,7 @@
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" name="question"></textarea>
                 </div>
                 <left><button type="submit" class="btn btn-primary">Submit</button></left>
+                <a class="btn btn-secondary" href="<?= base_url('KonsultasiController'); ?>">Batal</a>
             </form>
         <?php } ?>
     </div>
