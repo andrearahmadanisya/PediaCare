@@ -33,12 +33,15 @@
                     <a class="nav-item nav-link" href="<?= base_url('RumahSakitController'); ?>">Rumah Sakit</a>
                     <a class="nav-item nav-link" href="<?= base_url('KonsultasiController'); ?>">Konsultasi</a>
                     <a class="nav-item nav-link" href="<?= base_url('InfoController'); ?>">Info/Berita</a>
-                    <a class="nav-item nav-link" href="<?= base_url('HomeController/AboutUs'); ?>">About Us</a>
+                    <a class="nav-item nav-link" href="<?= base_url('AboutUsController'); ?>">About Us</a>
                 </div>
             </div>
             <div class="text-right" class="collapse navbar-collapse">
-                <a class="btn navbar-dark my-2 my-sm-0" href="<?= base_url('LoginController'); ?>">Login</a>
-                <a class="btn navbar-dark my-2 my-sm-0" href="<?= base_url(''); ?>">Logout</a>
+                <?php if(isset($user['fullname'])) { ?>
+                    <a class="btn navbar-dark my-2 my-sm-0" href="<?= base_url('HomeController/logout'); ?>">Logout</a>
+                <?php } else { ?>
+                    <a class="btn navbar-dark my-2 my-sm-0" href="<?= base_url('LoginController'); ?>">Login</a>
+                <?php }?>
             </div>
         </div>
     </nav>
