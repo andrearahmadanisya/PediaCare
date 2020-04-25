@@ -1,27 +1,27 @@
-.info body{
+.ninfo{
     background: #007b9b;
 }
 
-.info .img-title{
+.ninfo .img-title{
     margin-top: 30px;
 }
 
-.info .col img{
+.ninfo .col img{
     margin-top: 20px;
     margin-bottom: 40px;
 }
 
-.info .col p{
+.ninfo .col p{
     text-align: justify;
 }
 
-.info .kembali{
+.ninfo .kembali{
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-.info .card{
+.ninfo .card{
     margin-top: 30px;
     background: white;
 }
