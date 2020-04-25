@@ -6,7 +6,7 @@
         <div class="container text-center">
             <h2 class="display-4">Anda Ingin Konsultasi Seputar Anak ?</h2>
             <p class="lead">Tanyakan kepada kami secara mudah dan cepat</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">klik disini</a>
+            <a class="btn btn-primary btn-lg" href="<?=base_url('KonsultasiController')?>" role="button">klik disini</a>
         </div>
     </div>
 
@@ -29,15 +29,18 @@
                         <h4 class="mt-0"><?= $rs['nama'] ?></h4>
                         <p><?= $rs['alamat'] ?></p>
                         <p><?= $rs['notelp'] ?></p>
-                        <!-- <a type="button" class="btn btn-danger btn-sm" href="<?php echo base_url() . 'RumahSakitController/delete/' . $rs['id_rumahsakit'] ?>" onClick="return confirm('Apakah Anda Yakin?')">Delete</a></td>
-                        <a type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#UpdateRS<?= $rs['id_rumahsakit'] ?>"> Update</a> -->
+                        <?php if($user['role']==1) { ?>
+                        <a type="button" class="btn btn-danger btn-sm" href="<?php echo base_url() . 'RumahSakitController/delete/' . $rs['id_rumahsakit'] ?>" onClick="return confirm('Apakah Anda Yakin?')">Delete</a></td>
+                        <a type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#UpdateRS<?= $rs['id_rumahsakit'] ?>"> Update</a>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
             <br>
         <?php } ?>
-
+        <?php if($user['role']==1) { ?>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit1">TAMBAH </button>
+        <?php } ?>
 
         <div class="modal fade" id="edit1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
             <div class="modal-dialog" role="document">
