@@ -15,18 +15,24 @@
                 <br>
                 <!-- ini isi pertanyaan -->
                 <p class="card-text"><?php echo substr($k['question'], 0, 50)  ?>...</p>
+                <?php if($k['answer']) { ?>
+                <p class="card-text"><b>Jawaban:</b> <?=$k['answer']  ?></p>
+                <?php }?>
             </div>
             <div class="card-footer">
                 <a type="button" href="<?= base_url('lihat_konsultasi_controller/index/') . $k['id_konsultasi'] ?>" class="btn"> lihat</a>
+                <?php if($user['role']==1){ ?>
                 <a type="button" href="<?= base_url('JawabKonsultasiController/index/') . $k['id_konsultasi'] ?>" class="btn">Jawab</a>
+                <?php } ?>
             </div>
         </div>
     <?php } ?>
     <br>
-    <div class="card-footer">
-        <a type="button" href="<?= base_url('InputKonsultasiController'); ?>" class="btn">Tanya!</a>
+    <div class="card ">
+        <div class="card-footer">
+            <a type="button" href="<?= base_url('InputKonsultasiController'); ?>" class="btn">Tanya!</a>
+        </div>
     </div>
-
     </table>
     <br></bbr>
 </body>
